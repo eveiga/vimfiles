@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/eveiga/Development/dotfiles/vim/bundle/pyflakes-vim/.git'
+let g:netrw_dirhist_2='/home/eveiga/Development/Python/otastore'
+let g:netrw_dirhist_3='/Users/eveiga/Development/Python/cdmaker/.env/lib/python2.7/site-packages/soaplib'
+let g:netrw_dirhist_4='/Users/eveiga/Development/Python/otastore/vivo'
