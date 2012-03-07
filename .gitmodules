@@ -17,6 +17,7 @@
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+	ignore = dirty
 [submodule "vim/bundle/command-t"]
 	path = vim/bundle/command-t
 	url = https://github.com/wincent/Command-T.git
@@ -24,6 +25,7 @@
 [submodule "vim/bundle/ropevim"]
 	path = vim/bundle/ropevim
 	url = https://github.com/sontek/rope-vim.git
+	ignore = dirty
 [submodule "vim/bundle/ack"]
 	path = vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
@@ -31,9 +33,12 @@
 [submodule "vim/bundle/TabBar"]
 	path = vim/bundle/TabBar
 	url = git://github.com/vim-scripts/TabBar.git
+	ignore = dirty
 [submodule "vim/bundle/matchit"]
 	path = vim/bundle/matchit
 	url = https://github.com/tmhedberg/matchit
+	ignore = dirty
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+	ignore = dirty
