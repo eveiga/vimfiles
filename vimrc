@@ -78,7 +78,8 @@ autocmd FileType python set omnifunc=pythoncomplete#Completei
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
-autocmd BufWritePre * :%s/\s\+$//e
+" Can't really expect that this is usefull on shitty repositories.
+" autocmd BufWritePre * :%s/\s\+$//e
 
 autocmd FileType c setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
