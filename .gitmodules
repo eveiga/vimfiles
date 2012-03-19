@@ -54,3 +54,6 @@
 [submodule "vim/bundle/vim-xdebug"]
 	path = vim/bundle/vim-xdebug
 	url = https://github.com/K-Phoen/vim-xdebug
+[submodule "vim/bundle/taglist"]
+	path = vim/bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim
