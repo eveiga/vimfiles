@@ -30,10 +30,6 @@
 	path = vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
 	ignore = dirty
-[submodule "vim/bundle/TabBar"]
-	path = vim/bundle/TabBar
-	url = git://github.com/vim-scripts/TabBar.git
-	ignore = dirty
 [submodule "vim/bundle/matchit"]
 	path = vim/bundle/matchit
 	url = https://github.com/tmhedberg/matchit
