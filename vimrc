@@ -34,7 +34,7 @@ set completeopt=menuone,longest,preview " Better completion menu
 
 "" Look and Feel
 set background=dark
-colorscheme molokai
+colorscheme solarized
 set gfn=Monaco:h12     " Font type
 
 if version >= 703
