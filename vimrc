@@ -73,13 +73,12 @@ nmap <leader>a <Esc>:Ack!
 set suffixes+=.pyc,.pyo
 
 "" Python specs
-autocmd FileType python setl autoindent tabstop=4 expandtab shiftwidth=4 softtabstop=4 smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+autocmd FileType python setl cinwords=if,elif,else,for,while,with,try,except,finally,def,class
 autocmd FileType python set omnifunc=pythoncomplete#Completei
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
-" Can't really expect that this is usefull on shitty repositories.
-" autocmd BufWritePre * :%s/\s\+$//e
 
-autocmd FileType c setl autoindent tabstop=2 expandtab shiftwidth=2 softtabstop=2
+" Can't really expect that this is usefull on shitty repositories.
+autocmd BufWritePre * :%s/\s\+$//e
 
