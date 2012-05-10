@@ -41,9 +41,6 @@
 [submodule "vim/bundle/javaScriptLint"]
 	path = vim/bundle/javaScriptLint
 	url = https://github.com/joestelmach/javaScriptLint.vim
-[submodule "vim/bundle/jsbeautify"]
-	path = vim/bundle/jsbeautify
-	url = https://github.com/vim-scripts/jsbeautify
 [submodule "vim/bundle/vim-javascript"]
 	path = vim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
