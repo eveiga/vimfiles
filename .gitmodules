@@ -48,3 +48,6 @@
 	path = vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim
 	ignore = dirty
+[submodule "vim/bundle/lint.vim"]
+	path = vim/bundle/lint.vim
+	url = git@github.com:joestelmach/lint.vim.git
