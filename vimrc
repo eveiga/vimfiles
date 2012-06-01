@@ -74,7 +74,8 @@ set suffixes+=.pyc,.pyo
 
 "" Python specs
 autocmd FileType python setl cinwords=if,elif,else,for,while,with,try,except,finally,def,class
-autocmd FileType python set omnifunc=pythoncomplete#Completei
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
