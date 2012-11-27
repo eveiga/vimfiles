@@ -51,3 +51,6 @@
 [submodule "vim/bundle/lint.vim"]
 	path = vim/bundle/lint.vim
 	url = git@github.com:joestelmach/lint.vim.git
+[submodule "vim/bundle/vim-jade"]
+	path = vim/bundle/vim-jade
+	url = https://github.com/digitaltoad/vim-jade.git
