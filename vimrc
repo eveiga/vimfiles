@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 filetype off
 "" Start Pathogen
 call pathogen#runtime_append_all_bundles()
@@ -19,7 +21,7 @@ set smartcase          " Do smart case matching when searching
 set incsearch          " Incremental search
 set hlsearch           " Highlight search results
 set list               " Show invisibles
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
 set mouse=a            " Enable mouse usage (all modes) in terminals
 set number
 set ruler              " show the cursor position all the time
