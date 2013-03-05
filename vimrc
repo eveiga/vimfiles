@@ -84,3 +84,4 @@ match ExtraWhitespace /\s\+$/
 " Can't really expect that this is usefull on shitty repositories.
 autocmd BufWritePre * :%s/\s\+$//e
 
+let jshint_options_file = '~/.jshint_options.js'
