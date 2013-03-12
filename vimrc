@@ -50,22 +50,12 @@ endif
 
 filetype plugin indent on  " Enables filetype specific stuff
 
-"" Bind new movement keys
-nmap <silent> <c-Up> :wincmd k<CR>
-nmap <silent> <c-Down> :wincmd j<CR>
-nmap <silent> <c-Left> :wincmd h<CR>
-nmap <silent> <c-Right> :wincmd l<CR>
-
 "" Bind a shortcut to Nerdtree
 map <leader>n :NERDTreeToggle<CR>
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 
 "" Disable pyflakes use of quickfix window
 let g:pyflakes_use_quickfix = 0
-
-"" Map for ropevim
-map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
 
 "" Ack, fuck yeah
 nmap <leader>a <Esc>:Ack!
