@@ -73,15 +73,31 @@ nmap <leader>a <Esc>:Ack!
 "" Ignorable files
 set suffixes+=.pyc,.pyo
 
-"" Python specs
-autocmd FileType python setl cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+"" Omni completion
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
+"" Highlight extra whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
-" Can't really expect that this is usefull on shitty repositories.
+"" Can't really expect that this is usefull on shitty repositories. Erase all empty spaces
 autocmd BufWritePre * :%s/\s\+$//e
 
-let jshint_options_file = '~/.jshint_options.js'
+"" JSHINT options
+if filereadable(expand("~/.jshint_options.js"))
+    let jshint_options_file = '~/.jshint_options.js'
+endif
+
+"" Command-t specific bindings
+if &term =~ "xterm" || &term =~ "screen"
+  let g:CommandTCancelMap     = ['<ESC>', '<C-c>']
+  let g:CommandTSelectNextMap = ['<C-n>', '<C-j>', '<ESC>OB']
+  let g:CommandTSelectPrevMap = ['<C-p>', '<C-k>', '<ESC>OA']
+endif
+
+"" Change shape of cursor in insert mode in iTerm 2
+if exists('$ITERM_PROFILE')
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
