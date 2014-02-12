@@ -2,8 +2,7 @@ set encoding=utf-8
 
 filetype off
 "" Start Pathogen
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
 
 set nocompatible       " Use Vim defaults instead of 100% vi compatibility
 set autoindent         " Auto indent new lines
