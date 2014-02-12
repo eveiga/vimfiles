@@ -90,3 +90,10 @@ if exists('$ITERM_PROFILE')
     let &t_SI = "\<Esc>]50;CursorShape=1\x7"
     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
+
+"" Command-t ignore dirs from webcare
+set wildignore+=agent/skins/**,agent/liveagentskins/**,agent/i/**,custom/**
+set wildignore+=demo/**,projectos_extra_webcare/**,agent/chat/skins/**
+set wildignore+=images/**,css/**,admin/**,adcenter/**,leads/**
+set wildignore+=v3/bower_components/**,include/deviceatlas/**,
+set wildignore+=include/ckeditor/**,include/aws/**,include/composer/**
