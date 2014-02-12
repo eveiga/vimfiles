@@ -74,9 +74,7 @@ match ExtraWhitespace /\s\+$/
 autocmd BufWritePre * :%s/\s\+$//e
 
 "" JSHINT options
-if filereadable(expand("~/.jshint_options.js"))
-    let jshint_options_file = '~/.jshint_options.js'
-endif
+let JSHintUpdateWriteOnly=1
 
 "" Command-t specific bindings
 if &term =~ "xterm" || &term =~ "screen"
