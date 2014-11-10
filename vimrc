@@ -4,6 +4,17 @@ filetype off
 "" Start Pathogen
 execute pathogen#infect()
 
+"" Start Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"" Load Vundle plugins
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+
+"" End Vundle
+call vundle#end()
+
 set nocompatible       " Use Vim defaults instead of 100% vi compatibility
 set autoindent         " Auto indent new lines
 set smartindent        " Make autoindent smarter
