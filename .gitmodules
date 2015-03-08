@@ -22,10 +22,6 @@
 	path = vim/bundle/command-t
 	url = https://github.com/wincent/Command-T.git
 	ignore = dirty
-[submodule "vim/bundle/ropevim"]
-	path = vim/bundle/ropevim
-	url = https://github.com/sontek/rope-vim.git
-	ignore = dirty
 [submodule "vim/bundle/ack"]
 	path = vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
