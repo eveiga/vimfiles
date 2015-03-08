@@ -64,5 +64,5 @@
 	path = vim/bundle/checksyntax_vim
 	url = https://github.com/tomtom/checksyntax_vim.git
 [submodule "vim/bundle/jshint.vim"]
-	path = /Users/eveiga/.vim/bundle/jshint.vim
+	path = vim/bundle/jshint.vim
 	url = https://github.com/wookiehangover/jshint.vim.git
