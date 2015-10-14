@@ -106,6 +106,7 @@ set wildignore+=demo/**,projectos_extra_webcare/**,agent/chat/skins/**
 set wildignore+=images/**,css/**,admin/**,adcenter/**,leads/**
 set wildignore+=v3/bower_components/**,include/deviceatlas/**,
 set wildignore+=include/ckeditor/**,include/aws/**,include/composer/**
+set wildignore+=node_modules/**
 
 "" Allow copy/paste between clipboard
 set clipboard=unnamed
