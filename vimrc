@@ -10,7 +10,7 @@ call vundle#begin()
 
 "" Load Vundle plugins
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'editorconfig/editorconfig-vim'
 
 "" End Vundle
 call vundle#end()
@@ -110,3 +110,12 @@ set wildignore+=node_modules/**
 
 "" Allow copy/paste between clipboard
 set clipboard=unnamed
+
+"" airline custom
+set laststatus=2
+
+"" Deactivate arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
