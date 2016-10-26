@@ -11,6 +11,7 @@ call vundle#begin()
 "" Load Vundle plugins
 Plugin 'gmarik/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Bundle 'stephpy/vim-php-cs-fixer'
 
 "" End Vundle
 call vundle#end()
@@ -119,3 +120,13 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+"" php-cs-fixer specs
+let g:php_cs_fixer_path = "./vendor/bin/php-cs-fixer"
+let g:php_cs_fixer_level = "psr2"
+let g:php_cs_fixer_config = "default"
+let g:php_cs_fixer_php_path = "php"
+let g:php_cs_fixer_fixers_list = "concat_with_spaces,short_array_syntax"
+let g:php_cs_fixer_enable_default_mapping = 1
+let g:php_cs_fixer_dry_run = 0
+let g:php_cs_fixer_verbose = 0
