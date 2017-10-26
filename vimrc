@@ -4,17 +4,16 @@ filetype off
 "" Start Pathogen
 execute pathogen#infect()
 
-"" Start Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"" vim-plug
+call plug#begin('~/.vim/plugged')
 
-"" Load Vundle plugins
-Plugin 'gmarik/Vundle.vim'
-Plugin 'editorconfig/editorconfig-vim'
-Bundle 'stephpy/vim-php-cs-fixer'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'mileszs/ack.vim'
 
-"" End Vundle
-call vundle#end()
+" Initialize plugin system
+call plug#end()
 
 set nocompatible       " Use Vim defaults instead of 100% vi compatibility
 set autoindent         " Auto indent new lines
@@ -44,6 +43,7 @@ set viminfo='20,\"50   " read/write a .viminfo file, don't store more than 50 li
 set wildmenu           " Enhanced command-line completion.
 set wildmode=list:longest " Show all alternatives and complete furtherest possible.
 set completeopt=menuone,longest,preview " Better completion menu
+set autoread                " Don't bother me hen a file changes
 
 "" Look and Feel
 colorscheme hybrid
@@ -63,20 +63,14 @@ filetype plugin indent on  " Enables filetype specific stuff
 
 "" Bind a shortcut to Nerdtree
 map <leader>n :NERDTreeToggle<CR>
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 
-"" Disable pyflakes use of quickfix window
-let g:pyflakes_use_quickfix = 0
+"" Use ag instead of ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 "" Ack, fuck yeah
-nmap <leader>a <Esc>:Ack!
-
-"" Ignorable files
-set suffixes+=.pyc,.pyo
-
-"" Omni completion
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+nmap <leader>a <Esc>:Ack
 
 "" Highlight extra whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -115,3 +109,12 @@ let g:php_cs_fixer_fixers_list = "concat_with_spaces,short_array_syntax"
 let g:php_cs_fixer_enable_default_mapping = 1
 let g:php_cs_fixer_dry_run = 0
 let g:php_cs_fixer_verbose = 0
+
+"" fzf
+nmap ; :Buffers<CR>
+nmap <Leader>t :Files<CR>
+nmap <Leader>r :Tags<CR>
+
+" Move between open buffers.
+nmap <C-n> :bnext<CR>
+nmap <C-p> :bprev<CR>
