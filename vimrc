@@ -88,26 +88,11 @@ autocmd BufWritePre * :%s/\s\+$//e
 "" JSHINT options
 let JSHintUpdateWriteOnly=1
 
-"" Command-t specific bindings
-if &term =~ "xterm" || &term =~ "screen"
-  let g:CommandTCancelMap     = ['<ESC>', '<C-c>']
-  let g:CommandTSelectNextMap = ['<C-n>', '<C-j>', '<ESC>OB']
-  let g:CommandTSelectPrevMap = ['<C-p>', '<C-k>', '<ESC>OA']
-endif
-
 "" Change shape of cursor in insert mode in iTerm 2
 if exists('$ITERM_PROFILE')
     let &t_SI = "\<Esc>]50;CursorShape=1\x7"
     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
-
-"" Command-t ignore dirs from webcare
-set wildignore+=agent/skins/**,agent/liveagentskins/**,agent/i/**,custom/**
-set wildignore+=demo/**,projectos_extra_webcare/**,agent/chat/skins/**
-set wildignore+=images/**,css/**,admin/**,adcenter/**,leads/**
-set wildignore+=v3/bower_components/**,include/deviceatlas/**,
-set wildignore+=include/ckeditor/**,include/aws/**,include/composer/**
-set wildignore+=node_modules/**
 
 "" Allow copy/paste between clipboard
 set clipboard=unnamed
